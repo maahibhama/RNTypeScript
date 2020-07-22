@@ -5,13 +5,15 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "react-native start --port 8082",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start:macos": "node node_modules/react-native-macos/local-cli/cli.js start --use-react-native-macos"
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react-native": "0.63.2",
+    "react-native-macos": "^0.61.0-0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
